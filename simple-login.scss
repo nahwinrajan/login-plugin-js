@@ -1,0 +1,127 @@
+.nraj-text-center {
+  text-align: center;
+}
+
+.nraj-vanquish {
+  display: none;
+}
+
+.nraj-button {
+  margin: 10px;
+  padding: 12px 12px;
+  max-width: 160px;
+  white-space: normal;
+  overflow-wrap: hidden;
+  font-size: 24px;
+
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  transition: all 60ms ease-in-out;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #fff !important;
+  border: none;
+  border-radius: 5px;
+
+  transition: all 60ms ease;
+
+  &:focus, &:active {
+    outline: none !important;
+  }
+
+  &:hover {
+    opacity: .85;
+  }
+
+  &:active {
+    transform: scale(.97);
+  }
+}
+
+.nraj-err-message {
+  color: #ef3b3A;
+}
+
+.nraj-modal {
+}
+
+.nraj-login-form {
+  position: absolute;
+  font-family: "Raleway", "Open Sans", "Century Gothic", "Helvetica Neue", Helvetica, sans-serif;
+  top: 50%;
+  left: 35%;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -30vh auto 0 auto;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  z-index: 10;
+  animation: reveal-anima .5s cubic-bezier(0.52, 0.01, 0.16, 1);
+  color: #212121;
+
+  & > input {
+    width: 90%;
+    padding: 10px 5px 10px 10px;
+    margin-bottom: 15px;
+    display: block;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    transition: 0.2s cubic-bezier(0.52, 0.01, 0.16, 1);
+    color: darken(#EDEDED, 80%);
+    font-size: 20px;
+
+    &:focus {
+      padding: 10px 5px 10px 10px;
+      outline: none;
+    }
+
+    .nraj-input-login {
+      position: relative;
+      width: 90%;
+      margin: 10px 10px;
+    }
+  }
+}
+
+.nraj-legend-login-form {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid white;
+  h2 {
+    font-size: 24px;
+  }
+  input[type=button] {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    font-size: 14px;
+    color: #fff;
+    transition: all 300ms ease-out;
+    &:hover {
+      transform: rotate3d(1, 1, 0, 360deg)scale3d( 1.4, 1.4, 1);
+    }
+    &:active {
+      transform: scale3d(.97, .97, 1);
+      font-weight: 400;
+    }
+  }
+}
