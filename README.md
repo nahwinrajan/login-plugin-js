@@ -19,4 +19,4 @@ it doesn't take care of your actual log in yet, for the moment it just show up t
 
 #Options
 you can change the accent color and login text of the form
-var myLogin = new Login({accentColor: "1ca8dd", loginTitle: "hello there!!", loginTextButton: "come on in"});
+  var myLogin = new Login({accentColor: "1ca8dd", loginTitle: "hello there!!", loginTextButton: "come on in"});
